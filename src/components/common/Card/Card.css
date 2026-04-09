@@ -1,0 +1,62 @@
+.card {
+    background: var(--surface);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.card--hoverable:hover,
+.card--clickable:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    border-color: var(--primary-start);
+}
+
+.card--clickable {
+    cursor: pointer;
+}
+
+.card--selected {
+    border-color: var(--primary-start);
+    box-shadow: var(--shadow-glow);
+    background: linear-gradient(135deg,
+            rgba(99, 102, 241, 0.1),
+            rgba(139, 92, 246, 0.1));
+}
+
+.card--gradient {
+    background: linear-gradient(135deg,
+            var(--surface),
+            rgba(99, 102, 241, 0.05));
+}
+
+.card--success {
+    border-color: var(--success);
+    background: linear-gradient(135deg,
+            rgba(16, 185, 129, 0.1),
+            rgba(16, 185, 129, 0.05));
+}
+
+.card--danger {
+    border-color: var(--danger);
+    background: linear-gradient(135deg,
+            rgba(239, 68, 68, 0.1),
+            rgba(239, 68, 68, 0.05));
+}
+
+.card__header {
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.card__body {
+    padding: var(--space-5);
+}
+
+.card__footer {
+    padding: var(--space-4) var(--space-5);
+    border-top: 1px solid var(--glass-border);
+}

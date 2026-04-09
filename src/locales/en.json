@@ -1,0 +1,217 @@
+{
+    "common": {
+        "appName": "Football Quiz",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "tryAgain": "Try Again",
+        "back": "Back",
+        "next": "Next",
+        "start": "Start",
+        "continue": "Continue",
+        "finish": "Finish",
+        "home": "Home",
+        "settings": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "dark": "Dark",
+        "light": "Light"
+    },
+    "home": {
+        "title": "Football Quiz",
+        "subtitle": "Test your football knowledge and become a champion!",
+        "enterName": "Enter Your Name",
+        "namePlaceholder": "Your Name...",
+        "startQuiz": "Start Quiz",
+        "leaderboard": "Leaderboard",
+        "howToPlay": "How to Play?",
+        "howToPlayDesc": "Choose your category, select difficulty level, and answer questions quickly to get the highest score!",
+        "features": {
+            "title": "Features",
+            "categories": "6 Game Modes",
+            "difficulty": "3 Difficulty Levels",
+            "timer": "Race Against Time",
+            "leaderboard": "Global Leaderboard"
+        }
+    },
+    "categories": {
+        "title": "Choose Category",
+        "subtitle": "What topic do you want to test yourself on?",
+        "player": {
+            "title": "Player Knowledge",
+            "description": "Players' teams, nationalities, and statistics"
+        },
+        "team": {
+            "title": "Team Knowledge",
+            "description": "Teams' leagues, stadiums, and achievements"
+        },
+        "match": {
+            "title": "Match & Statistics",
+            "description": "Match results, records, and statistics"
+        },
+        "mixed": {
+            "title": "Mixed Quiz",
+            "description": "Mixed questions from all categories"
+        },
+        "whoami": {
+            "title": "Ben Kimim?",
+            "description": "Find the mystery player in 8 guesses!"
+        },
+        "video": {
+            "title": "Video Quiz",
+            "description": "Watch the clip, guess the outcome!",
+            "watchOutcome": "Watch and see!"
+        }
+    },
+    "difficulty": {
+        "title": "Select Difficulty",
+        "subtitle": "How hard should it be?",
+        "clickToStart": "Select a difficulty to start",
+        "tapToStart": "Tap to start",
+        "easy": {
+            "title": "Easy",
+            "description": "Popular teams and star players",
+            "time": "20 seconds",
+            "multiplier": "1x points"
+        },
+        "medium": {
+            "title": "Medium",
+            "description": "League knowledge and season statistics",
+            "time": "15 seconds",
+            "multiplier": "1.5x points"
+        },
+        "hard": {
+            "title": "Hard",
+            "description": "Detailed statistics and past seasons",
+            "time": "10 seconds",
+            "multiplier": "2x points"
+        }
+    },
+    "quiz": {
+        "question": "Question",
+        "of": "/",
+        "timeLeft": "Time Left",
+        "score": "Score",
+        "streak": "Streak",
+        "contestant": "Contestant",
+        "correct": "Correct!",
+        "wrong": "Wrong!",
+        "timeUp": "Time's Up!",
+        "correctWas": "Correct answer",
+        "next": "Next",
+        "nextQuestion": "Next Question",
+        "loadingQuestions": "Preparing questions...",
+        "errorTitle": "Error Occurred",
+        "errorMessage": "An error occurred while loading questions. Please check your API connection."
+    },
+    "results": {
+        "title": "Quiz Complete!",
+        "yourScore": "Your Score",
+        "correct": "Correct",
+        "wrong": "Wrong",
+        "accuracy": "Accuracy",
+        "bestStreak": "Best Streak",
+        "playAgain": "Play Again",
+        "newCategory": "New Category",
+        "shareScore": "Share Score",
+        "excellent": "Excellent!",
+        "great": "Great!",
+        "good": "Good!",
+        "keepPracticing": "Keep Practicing!",
+        "newHighScore": "New High Score!",
+        "highScores": "High Scores",
+        "totalGames": "Total Games",
+        "totalScore": "Total Score",
+        "allTimeBestStreak": "All-Time Best Streak"
+    },
+    "leaderboard": {
+        "title": "Leaderboard",
+        "subtitle": "Top players",
+        "rank": "Rank",
+        "player": "Player",
+        "score": "Score",
+        "noData": "No scores recorded yet",
+        "yourRank": "Your Rank"
+    },
+    "whoamiGame": {
+        "title": "Who Am I?",
+        "subtitle": "Guess the mystery player from the Big 4 leagues in 8 tries. Feedback is revealed after every guess.",
+        "kpi": {
+            "guess": "Guess",
+            "remaining": "Remaining",
+            "streak": "Streak"
+        },
+        "feedback": {
+            "nationality": "NAT",
+            "league": "LGE",
+            "team": "TEAM",
+            "position": "POS",
+            "age": "AGE",
+            "shirtNumber": "SHIRT"
+        },
+        "sections": {
+            "mysteryPlayer": "Mystery Player",
+            "makeGuess": "Make a Guess",
+            "guessHistory": "Guess History"
+        },
+        "buttons": {
+            "categories": "Categories",
+            "previousDay": "Previous day",
+            "nextDay": "Next day",
+            "refreshPool": "Refresh Pool",
+            "showPhoto": "Show Photo",
+            "hidePhoto": "Hide Photo",
+            "guess": "Submit Guess",
+            "randomGuess": "Random Guess",
+            "copyResult": "Copy Result"
+        },
+        "labels": {
+            "dailyGame": "Daily Game",
+            "archiveGame": "Archive Game",
+            "archiveInfo": "You are playing an archive round. This game does not count toward your stats.",
+            "photoHidden": "Photo is currently hidden",
+            "photoHint": "Tip: Blur level decreases as your guesses get closer.",
+            "remainingAttempts": "{{count}} attempts",
+            "playerAnswer": "Player"
+        },
+        "placeholders": {
+            "playerName": "Type a player name..."
+        },
+        "state": {
+            "loadingPool": "Loading player pool from API...",
+            "loadError": "Player pool could not be loaded. Please try again.",
+            "emptyPool": "Player pool looks empty right now.",
+            "photoError": "Photo could not be loaded",
+            "noGuesses": "No guesses yet. Pick your first player to start."
+        },
+        "errors": {
+            "emptyGuess": "Please type a player name.",
+            "invalidGuess": "Choose a valid player from the list or type the full name."
+        },
+        "result": {
+            "win": "Great! You guessed it on attempt {{count}}.",
+            "lose": "Not this time. Correct answer: {{player}}"
+        },
+        "share": {
+            "copySuccess": "Result copied to clipboard.",
+            "copyFail": "Could not copy the result."
+        },
+        "stats": {
+            "played": "Played",
+            "winRate": "Win Rate",
+            "bestStreak": "Best Streak"
+        }
+    },
+    "questions": {
+        "playerTeam": "Which team does this player play for?",
+        "playerCountry": "Which country is this player from?",
+        "playerPosition": "What is this player's position?",
+        "playerJersey": "What is this player's jersey number?",
+        "teamLeague": "Which league does this team play in?",
+        "teamStadium": "What is this team's stadium?",
+        "teamCountry": "Which country is this team from?",
+        "teamFounded": "What year was this team founded?",
+        "matchWinner": "Which team won this match?",
+        "matchScore": "What was the final score of this match?",
+        "topScorer": "Who is the top scorer of this season?"
+    }
+}

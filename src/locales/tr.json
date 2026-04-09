@@ -1,0 +1,217 @@
+{
+    "common": {
+        "appName": "Futbol Quiz",
+        "loading": "Yükleniyor...",
+        "error": "Bir hata oluştu",
+        "tryAgain": "Tekrar Dene",
+        "back": "Geri",
+        "next": "İleri",
+        "start": "Başla",
+        "continue": "Devam Et",
+        "finish": "Bitir",
+        "home": "Ana Sayfa",
+        "settings": "Ayarlar",
+        "language": "Dil",
+        "theme": "Tema",
+        "dark": "Karanlık",
+        "light": "Aydınlık"
+    },
+    "home": {
+        "title": "Futbol Quiz",
+        "subtitle": "Futbol bilgini test et ve şampiyon ol!",
+        "enterName": "Adınızı Giriniz",
+        "namePlaceholder": "İsminiz...",
+        "startQuiz": "Quiz'e Başla",
+        "leaderboard": "Sıralama",
+        "howToPlay": "Nasıl Oynanır?",
+        "howToPlayDesc": "Kategorini seç, zorluk seviyeni belirle ve sorulara hızlıca cevap vererek en yüksek puanı topla!",
+        "features": {
+            "title": "Özellikler",
+            "categories": "6 Farklı Oyun Modu",
+            "difficulty": "3 Zorluk Seviyesi",
+            "timer": "Zamana Karşı Yarış",
+            "leaderboard": "Küresel Sıralama"
+        }
+    },
+    "categories": {
+        "title": "Kategori Seç",
+        "subtitle": "Hangi konuda kendini test etmek istersin?",
+        "player": {
+            "title": "Oyuncu Bilgisi",
+            "description": "Futbolcuların takımları, uyrukları ve istatistikleri"
+        },
+        "team": {
+            "title": "Takım Bilgisi",
+            "description": "Takımların ligleri, stadyumları ve başarıları"
+        },
+        "match": {
+            "title": "Maç & İstatistik",
+            "description": "Maç sonuçları, rekorlar ve istatistikler"
+        },
+        "mixed": {
+            "title": "Karma Quiz",
+            "description": "Tüm kategorilerden karışık sorular"
+        },
+        "whoami": {
+            "title": "Ben Kimim?",
+            "description": "Günün futbolcusunu 8 tahminde bul!"
+        },
+        "video": {
+            "title": "Video Quiz",
+            "description": "Pozisyonu izle, sonucu tahmin et!",
+            "watchOutcome": "İzle ve gör!"
+        }
+    },
+    "difficulty": {
+        "title": "Zorluk Seçimi",
+        "subtitle": "Ne kadar zor olsun?",
+        "clickToStart": "Başlamak için bir zorluk seç",
+        "tapToStart": "Başlamak için tıkla",
+        "easy": {
+            "title": "Kolay",
+            "description": "Popüler takımlar ve yıldız oyuncular",
+            "time": "20 saniye",
+            "multiplier": "1x puan"
+        },
+        "medium": {
+            "title": "Orta",
+            "description": "Lig bilgisi ve sezon istatistikleri",
+            "time": "15 saniye",
+            "multiplier": "1.5x puan"
+        },
+        "hard": {
+            "title": "Zor",
+            "description": "Detaylı istatistik ve geçmiş sezonlar",
+            "time": "10 saniye",
+            "multiplier": "2x puan"
+        }
+    },
+    "quiz": {
+        "question": "Soru",
+        "of": "/",
+        "timeLeft": "Kalan Süre",
+        "score": "Puan",
+        "streak": "Seri",
+        "contestant": "Yarışmacı",
+        "correct": "Doğru!",
+        "wrong": "Yanlış!",
+        "timeUp": "Süre Doldu!",
+        "correctWas": "Doğru cevap",
+        "next": "İleri",
+        "nextQuestion": "Sonraki Soru",
+        "loadingQuestions": "Sorular hazırlanıyor...",
+        "errorTitle": "Hata Oluştu",
+        "errorMessage": "Sorular yüklenirken bir hata oluştu. API bağlantınızı kontrol edin."
+    },
+    "results": {
+        "title": "Quiz Tamamlandı!",
+        "yourScore": "Puanın",
+        "correct": "Doğru",
+        "wrong": "Yanlış",
+        "accuracy": "İsabet Oranı",
+        "bestStreak": "En İyi Seri",
+        "playAgain": "Tekrar Oyna",
+        "newCategory": "Yeni Kategori",
+        "shareScore": "Puanını Paylaş",
+        "excellent": "Mükemmel!",
+        "great": "Harika!",
+        "good": "İyi!",
+        "keepPracticing": "Pratik Yap!",
+        "newHighScore": "Yeni Rekor!",
+        "highScores": "En Yüksek Puanlar",
+        "totalGames": "Toplam Oyun",
+        "totalScore": "Toplam Puan",
+        "allTimeBestStreak": "Tüm Zamanların En İyi Serisi"
+    },
+    "leaderboard": {
+        "title": "Sıralama",
+        "subtitle": "En iyi oyuncular",
+        "rank": "Sıra",
+        "player": "Oyuncu",
+        "score": "Puan",
+        "noData": "Henüz skor kaydedilmedi",
+        "yourRank": "Senin Sıran"
+    },
+    "whoamiGame": {
+        "title": "Ben Kimim?",
+        "subtitle": "Big 4 liglerinden gizli oyuncuyu 8 tahminde bul. Her tahminden sonra geri bildirim açılır.",
+        "kpi": {
+            "guess": "Tahmin",
+            "remaining": "Kalan Hak",
+            "streak": "Seri"
+        },
+        "feedback": {
+            "nationality": "NAT",
+            "league": "LIG",
+            "team": "TAKIM",
+            "position": "POZ",
+            "age": "YAŞ",
+            "shirtNumber": "FORMA"
+        },
+        "sections": {
+            "mysteryPlayer": "Gizli Oyuncu",
+            "makeGuess": "Tahmin Yap",
+            "guessHistory": "Tahmin Geçmişi"
+        },
+        "buttons": {
+            "categories": "Kategoriler",
+            "previousDay": "Önceki gün",
+            "nextDay": "Sonraki gün",
+            "refreshPool": "Havuzu Yenile",
+            "showPhoto": "Fotoğrafı Göster",
+            "hidePhoto": "Fotoğrafı Gizle",
+            "guess": "Tahmin Et",
+            "randomGuess": "Rastgele Tahmin",
+            "copyResult": "Sonucu Kopyala"
+        },
+        "labels": {
+            "dailyGame": "Günlük Oyun",
+            "archiveGame": "Arşiv Oyunu",
+            "archiveInfo": "Arşiv modunda oynuyorsun. Bu oyun istatistiklere eklenmez.",
+            "photoHidden": "Fotoğraf şu an gizli",
+            "photoHint": "İpucu: Doğru tahmin yaptıkça foto blur seviyesi azalır.",
+            "remainingAttempts": "{{count}} hak",
+            "playerAnswer": "Oyuncu"
+        },
+        "placeholders": {
+            "playerName": "Oyuncu adı yaz..."
+        },
+        "state": {
+            "loadingPool": "Oyuncu havuzu API'den yükleniyor...",
+            "loadError": "Oyuncu havuzu yüklenemedi. Lütfen tekrar dene.",
+            "emptyPool": "Oyuncu havuzu şu an boş görünüyor.",
+            "photoError": "Fotoğraf yüklenemedi",
+            "noGuesses": "Henüz tahmin yapmadın. İlk oyuncunu seçerek başla."
+        },
+        "errors": {
+            "emptyGuess": "Bir oyuncu adı yazmalısın.",
+            "invalidGuess": "Listeden geçerli bir oyuncu seçmelisin veya tam adını yazmalısın."
+        },
+        "result": {
+            "win": "Tebrikler! {{count}}. tahminde bildin.",
+            "lose": "Bu kez olmadı. Doğru cevap: {{player}}"
+        },
+        "share": {
+            "copySuccess": "Sonuç panoya kopyalandı.",
+            "copyFail": "Kopyalama başarısız oldu."
+        },
+        "stats": {
+            "played": "Oynanan",
+            "winRate": "Kazanma",
+            "bestStreak": "En İyi Seri"
+        }
+    },
+    "questions": {
+        "playerTeam": "Bu futbolcu hangi takımda oynuyor?",
+        "playerCountry": "Bu futbolcu hangi ülkeden?",
+        "playerPosition": "Bu futbolcunun pozisyonu nedir?",
+        "playerJersey": "Bu futbolcunun forma numarası kaç?",
+        "teamLeague": "Bu takım hangi ligde oynuyor?",
+        "teamStadium": "Bu takımın stadyumu hangisi?",
+        "teamCountry": "Bu takım hangi ülkeden?",
+        "teamFounded": "Bu takım hangi yılda kuruldu?",
+        "matchWinner": "Bu maçı hangi takım kazandı?",
+        "matchScore": "Bu maç kaç kaç bitti?",
+        "topScorer": "Bu sezonun gol kralı kim?"
+    }
+}

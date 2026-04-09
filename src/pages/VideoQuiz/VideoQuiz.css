@@ -1,0 +1,142 @@
+.video-quiz-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+}
+
+.video-brand {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+    pointer-events: none;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+}
+
+/* Adjustments for Quiz content when inside Video wrapper */
+.video-quiz-wrapper .quiz__body {
+    padding: 0;
+    /* Align with video */
+}
+
+.video-quiz-wrapper .quiz__question-card {
+    margin-bottom: 1.5rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .video-container {
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .video-brand {
+        font-size: 0.8rem;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Header Countdown */
+.video-quiz__countdown-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    /* Blue Badge */
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 80px;
+    text-align: center;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Inline Timer in Question Card */
+.quiz__question-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quiz__question-text {
+    flex: 1;
+}
+
+.quiz__inline-timer {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.quiz__inline-timer-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.quiz__inline-timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Dark mode logic for text color inside card if needed */
+@media (prefers-color-scheme: dark) {
+    .quiz__inline-timer-text {
+        color: #f1f5f9;
+    }
+}
+
+.quiz__inline-timer--warning .quiz__timer-progress {
+    stroke: #ef4444;
+}

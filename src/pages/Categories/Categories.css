@@ -1,0 +1,205 @@
+.categories {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-6);
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.categories__back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    align-self: flex-start;
+    margin-bottom: var(--space-4);
+}
+
+.categories__back:hover {
+    color: var(--text-primary);
+    transform: translateX(-4px);
+}
+
+/* Section */
+.categories__section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories__header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.categories__selected-category {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+}
+
+.categories__selected-icon {
+    font-size: 1.2em;
+}
+
+.categories__title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-3);
+}
+
+.categories__subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+}
+
+/* Category Grid */
+.categories__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-5);
+    flex: 1;
+}
+
+.categories__card {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-left: 4px solid var(--card-accent, var(--primary-start));
+}
+
+.categories__card .card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-6);
+}
+
+.categories__card-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.categories__card-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.categories__card-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Difficulty Cards */
+.categories__difficulties {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    flex: 1;
+}
+
+.categories__difficulty-card {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-left: 4px solid var(--card-accent, var(--primary-start));
+}
+
+.categories__difficulty-card .card__body {
+    padding: var(--space-5);
+}
+
+.categories__difficulty-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+}
+
+.categories__difficulty-icon {
+    font-size: 1.5rem;
+}
+
+.categories__difficulty-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.categories__difficulty-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-3);
+}
+
+.categories__difficulty-meta {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.categories__difficulty-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-3);
+    background: var(--glass);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+/* Start Hint */
+.categories__start-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: var(--radius-lg);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+}
+
+.categories__difficulty-card:hover .categories__start-hint {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Start Button (removed, kept for backwards compatibility) */
+.categories__start {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-8) 0 var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categories__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories__title {
+        font-size: var(--font-size-2xl);
+    }
+}

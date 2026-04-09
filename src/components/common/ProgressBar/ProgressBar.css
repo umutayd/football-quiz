@@ -1,0 +1,74 @@
+.progress {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.progress__track {
+    flex: 1;
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    position: relative;
+}
+
+.progress__fill {
+    height: 100%;
+    width: var(--progress-width, 0%);
+    border-radius: inherit;
+    transition: width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress--primary .progress__fill {
+    background: var(--primary-gradient);
+}
+
+.progress--success .progress__fill {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.progress--warning .progress__fill {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.progress--danger .progress__fill {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Animated shimmer effect */
+.progress--animated .progress__fill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            transparent 100%);
+    animation: shimmer 1.5s infinite;
+    background-size: 200% 100%;
+}
+
+/* Sizes */
+.progress--small .progress__track {
+    height: 4px;
+}
+
+.progress--medium .progress__track {
+    height: 8px;
+}
+
+.progress--large .progress__track {
+    height: 12px;
+}
+
+/* Label */
+.progress__label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 40px;
+    text-align: right;
+}

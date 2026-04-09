@@ -1,0 +1,195 @@
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-8) var(--space-6);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Hero Section */
+.home__hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-12) 0;
+    position: relative;
+    min-height: 60vh;
+}
+
+.home__hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.home__football-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: var(--space-6);
+}
+
+.home__football {
+    font-size: 5rem;
+    display: block;
+    animation: footballBounce 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 30px rgba(99, 102, 241, 0.4));
+}
+
+.home__football-glow {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 20px;
+    background: radial-gradient(ellipse, rgba(99, 102, 241, 0.5), transparent);
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.home__title {
+    font-size: var(--font-size-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.02em;
+}
+
+.home__subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto var(--space-6);
+}
+
+.home__name-input-wrapper {
+    margin-bottom: var(--space-6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home__name-input {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    background: var(--surface);
+    color: var(--text-primary);
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.home__name-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.home__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+/* Floating Elements */
+.home__floating-elements {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.home__floating-emoji {
+    position: absolute;
+    font-size: 2.5rem;
+    left: var(--x);
+    top: var(--y);
+    opacity: 0.3;
+    animation: float 4s ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+/* Features Section */
+.home__features {
+    padding: var(--space-8) 0;
+}
+
+.home__features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+}
+
+.home__feature-card {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.home__feature-card .card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    text-align: center;
+}
+
+.home__feature-icon {
+    font-size: 2.5rem;
+}
+
+.home__feature-text {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* How to Play */
+.home__how-to-play {
+    padding: var(--space-6) 0;
+}
+
+.home__instructions-card {
+    background: linear-gradient(135deg, var(--surface), rgba(99, 102, 241, 0.1));
+}
+
+.home__instructions-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-3);
+}
+
+.home__instructions-text {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home__football {
+        font-size: 4rem;
+    }
+
+    .home__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .home__subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .home__floating-emoji {
+        font-size: 1.5rem;
+        opacity: 0.2;
+    }
+}
